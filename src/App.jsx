@@ -1,6 +1,6 @@
 
 import './App.css'
-import { createBrowserRouter,createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter,createHashRouter,createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Layout from './Layout'
 import Home from './components/Home/Home'
 import Collections from './components/Collections/CollectionsMain'
@@ -10,7 +10,7 @@ import FollowMe from './components/FollowMe/FollowMe'
 import CollectionPage from './components/Collections/CollectionPage'
 
 
-const routes = createBrowserRouter(
+const routes = createHashRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
       <Route path='' element={<Home/>}/>

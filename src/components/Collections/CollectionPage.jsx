@@ -1,8 +1,7 @@
 import { NavLink, useParams } from "react-router-dom"
 import collections from "./collectionsdata" 
--
-// eslint-disable-next-line react/prop-types
-function CollectionPage() {
+
+export default function CollectionPage() {
   const {collectionId} = useParams()  
   const target = collections[collectionId.toString()]
   
@@ -36,4 +35,3 @@ function CollectionPage() {
 }
 
 // eslint-disable-next-line no-undef
-export default CollectionPage;
