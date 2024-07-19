@@ -1,6 +1,6 @@
 
 import './App.css'
-import { createBrowserRouter,createHashRouter,createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import { createHashRouter,createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Layout from './Layout'
 import Home from './components/Home/Home'
 import Collections from './components/Collections/CollectionsMain'
