@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  *{
+    box-sizing: border-box;
+    @apply selection:bg-orange-600 selection:text-white;
+  }
+  
+  body{
+    @apply bg-[#0f0f12] w-screen overflow-x-hidden
+    
+  }
+  @font-face {
+    font-family: 'mexonregular';
+    src: url('./assets/fonts/webfontkit-20240718-152858/mexon-webfont.woff2') format('woff2'),
+    url('./assets/fonts/webfontkit-20240718-152858/mexon-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+  .logo{
+  font-family:mexonregular ;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5rem;
+  }
+  .homeSection{
+    background-image: url(./assets/images/homeBg.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @apply object-none object-center
+  }
+  .dropShadow{
+    text-shadow:0px 0px 15px black;
+  }
+  .dropShadowWhite{
+    text-shadow:0px 0px 15px white;
+  }
+
+  /* .autoCarousal{
+    animation: alternate-reverse 25s 5s Carousal1 infinite ease-in-out;
+  }
+  @keyframes Carousal1{
+    0%,5%{
+      @apply translate-x-0
+    }
+    33% ,38%{
+      @apply -translate-x-[100vw]
+    }
+    63%,68%{
+      @apply -translate-x-[200vw]
+    }
+    
+  } */
+  .footer{
+    box-shadow: 2px -3px 20px #71387b76 ;
+  }
+  
+}
+
+
