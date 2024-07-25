@@ -56,7 +56,7 @@
     
   } */
   .footer{
-    box-shadow: 2px -3px 20px #71387b76 ;
+    box-shadow: 2px -3px 20px rgba(0, 0, 138, 0.56);
   }
   
 }

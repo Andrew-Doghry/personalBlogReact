@@ -1,16 +1,16 @@
 
 const collection={
-  description:"collection of individual writings that may touch",
+  description:"poems that touch",
   // realtedWritings:[],
   tags:["sad","mind_blowing","welcome_soul"],
-   time:"3",
-   views:"1,412"
+   time:"5",
+   views:"1,985"
 }
 
 import { NavLink, Outlet, useParams } from 'react-router-dom';
-import collectionContent from './collectionsdata.jsx'
+import collectionContent from './PoemsData.jsx'
 
-function Collections() {
+function Poems() {
   const {collectionId} = useParams()
   let collectionData = Object.entries( collectionContent);
   return (
@@ -19,7 +19,7 @@ function Collections() {
     <div className="max-w-2xl px-6 py-16 mx-auto space-y-12 text-white">
 	<article className="space-y-8 ">
 		<div className="space-y-6">
-			<h1 className="font-bold md:tracking-tight md:text-5xl  text-center capitalize tracking-tighter text-2xl lg:text-8xl">collections</h1>
+			<h1 className="font-bold md:tracking-tight md:text-5xl  text-center capitalize tracking-tighter text-2xl lg:text-8xl">poems</h1>
 			<div className="flex flex-col items-start justify-between w-full md:flex-row md:items-center ">
 				<div className="flex items-center md:space-x-2">
 					<img src="https://source.unsplash.com/75x75/?portrait" alt="" className="w-4 h-4 border rounded-full bg-gray-500 border-gray-300" />
@@ -34,7 +34,7 @@ function Collections() {
       // ele[0] => the id 
       // ele[1] => the content of the object 
         collectionData.map(ele=>{return(
-          <NavLink key={ele[0]} to={`/collections/${ele[0]}`}>
+          <NavLink key={ele[0]} to={`/poems/${ele[0]}`}>
           <Post  imgSrc={ele[1].imgsLink.type} time={ele[1].time} description={ele[1].content.slice(0,120)+'...'} title={ele[1].title} />
         <br />
       </NavLink>
@@ -52,7 +52,6 @@ function Collections() {
         )
       })}
       </div>
-
 	</div>
 </div>
 }
@@ -61,7 +60,7 @@ function Collections() {
   )
 }
 
-export default Collections
+export default Poems
 
  // eslint-disable-next-line react/prop-types
  function Post({title,description,time,imgSrc}) {
@@ -71,7 +70,7 @@ export default Collections
       <div className="bg-no-repeat bg-cover bg-gray-300 col-span-full lg:col-span-4 " style={{backgroundImage: `url(${imgSrc})`, backgroundPosition: "center center", backgroundBlendMode:" multiply", backgroundSize: "cover"}}></div>
       <div className="flex flex-col p-6 col-span-full row-span-full lg:col-span-8 lg:p-10">
         <div className="flex justify-start">
-          <span className="px-2 py-1 text-xs rounded-full font-semibold tracking-wide bg-blue-900">collection</span>
+          <span className="px-2 py-1 text-xs rounded-full font-semibold tracking-wide bg-blue-900">poems</span>
         </div>
         <h1 className="text-3xl font-semibold hover:underline capitalize transition-underline my-2">{title}</h1>
         <p className="flex-1 pt-2">{description}</p>

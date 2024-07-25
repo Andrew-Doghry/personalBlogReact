@@ -39,7 +39,7 @@ function Home() {
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <NavLink
             href="#"
-            className="rounded-md bg-flarePurple px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-500/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800 transition"
+            className="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800 transition"
           >
             Start Reading
           </NavLink>

@@ -65,9 +65,9 @@ export default function HeroSection() {
 {/* the logo  */}
                 {/* <span className="sr-only">Your Company</span>
                 <img
-                  alt=""
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  className="h-8 w-auto"
+                alt=""
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                className="h-8 w-auto"
                 /> */}
                             <span className='logo' >m<span className='text-orange-600'>k</span></span>
 
@@ -88,7 +88,7 @@ export default function HeroSection() {
                     <NavLink
                       key={item.name}
                       to={item.to}
-                      className={({isActive})=>`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7   ${isActive?"text-orange-600":"text-flarePurple"}`}
+                      className={({isActive})=>`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7   ${isActive?"text-orange-600":"text-blue-900"}`}
                       // text-gray-900
                     >
                       {item.name}
@@ -98,7 +98,7 @@ export default function HeroSection() {
                 <div className="py-6">
                   <NavLink
                     to="followme"
-                    className={({isActive})=>`-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7   ${isActive?"text-orange-600":"text-flarePurple"}`}
+                    className={({isActive})=>`-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7   ${isActive?"text-orange-600":"text-blue-900"}`}
                   >
                     Follow me
                   </NavLink>
@@ -106,8 +106,10 @@ export default function HeroSection() {
               </div>
             </div>
           </DialogPanel>
+
         </Dialog>
       </header>
+                
 
      
     </div>

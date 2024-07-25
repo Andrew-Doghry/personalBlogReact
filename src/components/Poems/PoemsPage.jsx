@@ -1,7 +1,7 @@
 import { NavLink, useParams } from "react-router-dom"
-import collections from "./collectionsdata" 
+import collections from "./PoemsData" 
 
-export default function CollectionPage() {
+export default function PoemsPage() {
   const {collectionId} = useParams()  
   const target = collections[collectionId.toString()]
   

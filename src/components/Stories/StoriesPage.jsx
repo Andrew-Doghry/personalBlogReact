@@ -1,7 +1,7 @@
 import { NavLink, useParams } from "react-router-dom"
-import collections from "./collectionsdata" 
+import collections from "./StoriesData" 
 
-export default function CollectionPage() {
+export default function StoriesPage() {
   const {collectionId} = useParams()  
   const target = collections[collectionId.toString()]
   
