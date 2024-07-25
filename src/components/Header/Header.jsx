@@ -8,9 +8,10 @@ import { NavLink } from 'react-router-dom'
 
 const navigation = [
   { name: 'Home', to: '' },
-  { name: 'Collections', to: 'collections' },
+  { name: 'collections', to: 'coll' },
   { name: 'Poems', to: 'Poems' },
   { name: 'Stories', to: "Stories" },
+  // { name: 'Coll', to: "coll" },
 ]
 
 

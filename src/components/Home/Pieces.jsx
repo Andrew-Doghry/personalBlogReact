@@ -8,7 +8,7 @@ import storiesImg from '../../assets/images/stories.jpg'
  function Piece({sample,name,imgsrc,isRight}) {
   return (
     // ${isRight?"flex-row-reverse md:flex-col sm:flex-col lg:flex-col":"flex-row md:flex-col sm:flex-col"}
-    <section className={`object-cover container flex items-center justify-center mt-10  flex-col   ${isRight?"lg:flex-row":"lg:flex-row-reverse"} my-4`}>
+    <section id="more" className={`object-cover container flex items-center justify-center mt-10  flex-col   ${isRight?"lg:flex-row":"lg:flex-row-reverse"} my-4`}>
   <div className=" py-8  text-center lg:py-16 lg:px-6">
       <figure className="max-w-screen-md mx-auto relative">
           <blockquote>

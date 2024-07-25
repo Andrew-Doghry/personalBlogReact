@@ -38,13 +38,13 @@ function Home() {
         </p> */}
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <NavLink
-            href="#"
+            to="/collections"
             className="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800 transition"
           >
             Start Reading
           </NavLink>
-          <NavLink href="#" className="text-sm font-semibold leading-6 text-white">
-            Learn more <span aria-hidden="true">→</span>
+          <NavLink to="/stories" className="text-sm font-semibold leading-6 text-white">
+            see Stories <span aria-hidden="true">→</span>
           </NavLink>
         </div>
       </div>

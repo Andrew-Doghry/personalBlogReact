@@ -16,7 +16,7 @@ function Poems() {
   return (
 <>
 {collectionId?<Outlet/>:
-    <div className="max-w-2xl px-6 py-16 mx-auto space-y-12 text-white">
+    <div className="container px-6 py-16 mx-auto space-y-12 text-white">
 	<article className="space-y-8 ">
 		<div className="space-y-6">
 			<h1 className="font-bold md:tracking-tight md:text-5xl  text-center capitalize tracking-tighter text-2xl lg:text-8xl">poems</h1>
