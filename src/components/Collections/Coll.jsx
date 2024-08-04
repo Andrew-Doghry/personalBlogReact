@@ -25,8 +25,6 @@ function Collection({MainTItle,MainTime,mainDescription,articles ,collectionId,c
     let contents = Object.entries(articles)
     console.log(contents)
 return (
-//     <>
-
 <div className="bg-gray-100 dark:text-gray-900 mt-16 container overflow-hidden lg:rounded-xl">
 	<div className="container grid grid-cols-12 mx-auto">
 		<div className="flex flex-col justify-center col-span-12 align-middle dark:bg-gray-300 bg-no-repeat bg-cover lg:col-span-6 lg:h-auto" style={{backgroundImage:`url(${collectionImg})`, backgroundPosition :" center center", backgroundBlendMode: "multiply", backgroundSize:" cover"}}>
