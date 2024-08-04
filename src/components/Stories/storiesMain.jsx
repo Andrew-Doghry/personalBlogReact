@@ -36,7 +36,7 @@ function Stories() {
                 collectionData.map(ele => {
                   return (
                     <NavLink key={ele[0]} to={`/stories/${ele[0]}`}>
-                      <Post imgSrc={ele[1].imgsLink.type} time={ele[1].time} description={ele[1].content.description} title={ele[1].title} />
+                      <Post imgSrc={ele[1].imgsLink.type} time={ele[1].time} description={ele[1].description} title={ele[1].title} />
                       <br />
                     </NavLink>
                   )
