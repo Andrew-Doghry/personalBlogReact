@@ -18,7 +18,7 @@ export default function StoriesPage() {
 							</p>
 						</div>
 						<div className="dark:text-gray-800">
-							<p>{target.content}</p>
+							<pre className="whitespace-pre-wrap">{target.content}</pre>
 						</div>
 					</div>
 				</div>

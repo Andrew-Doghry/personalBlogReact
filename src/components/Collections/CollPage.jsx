@@ -20,7 +20,7 @@ export default function CollPage() {
 							</p>
 						</div>
 						<div className="dark:text-gray-800">
-							<p>{article.content}</p>
+							<pre className="whitespace-pre-wrap">{article.content}</pre>
 						</div>
 					</div>
 				</div>
