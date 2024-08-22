@@ -1,12 +1,17 @@
 import { NavLink, useParams } from "react-router-dom"
 import collections from "./StoriesData"
-
+import { useEffect } from "react"
+import { motion, useScroll } from 'framer-motion'
 export default function StoriesPage() {
 	const { collectionId } = useParams()
 	const target = collections[collectionId.toString()]
-
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+	const { scrollYProgress } = useScroll()
 	return (
 		<>
+			<motion.div className='fixed top-0 right-0 left-0 z-200 origin-left bg-flareOrange h-[5px] w-full' style={{ scaleX: scrollYProgress }}></motion.div>
 			<div className="p-5 mt-10 mx-auto sm:p-10 md:p-16 dark:text-gray-800 container">
 				<div className="flex flex-col max-w-3xl mx-auto overflow-hidden rounded">
 					<div alt="" className="w-full h-60 sm:h-96 dark:bg-gray-500" style={{ backgroundImage: `url(${target.imgsLink.type})`, backgroundPosition: "center center", backgroundSize: "cover" }}></div>

@@ -12,7 +12,6 @@ import Stories from './components/Stories/storiesMain'
 import CollPage from './components/Collections/CollPage'
 import Loading from './components/Loading/Loading'
 import { useEffect, useState } from 'react'
-
 const routes = createHashRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
@@ -38,7 +37,6 @@ function App() {
   const [isLoading, setLoading] = useState(true)
   useEffect(() => {
     setTimeout(() => {
-
       setLoading(!isLoading)
     }, 2000);
   }, [])
@@ -46,8 +44,9 @@ function App() {
     <>
       {/* <RouterProvider router={routes}/> */}
       {isLoading ?
-        <Loading /> :
-        <RouterProvider router={routes} />
+        <Loading /> : (
+          <RouterProvider router={routes} />
+        )
       }
     </>
   )

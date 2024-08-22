@@ -11,7 +11,7 @@ function Coll() {
             {/* {collId?<Outlet/>: */}
             {collectionData.map(ele => {
                 return (
-                    <div key={+ele[0]}>
+                    <div key={+ele[0]} className='hover:-translate-y-[10px] transition-[0.3]'>
                         <Collection MainTime={ele[1].time} MainTItle={ele[1].title} mainDescription={ele[1].Description} articles={ele[1].articles} collectionId={ele[0]} collectionImg={ele[1].collectionImg} />
                     </div>
                 )
@@ -32,9 +32,13 @@ function Collection({ MainTItle, MainTime, mainDescription, articles, collection
                         <span>{MainTime}</span>
                         <h1 className="py-4 text-5xl font-bold">{MainTItle}</h1>
                         <p className="pb-6">{mainDescription}!</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-7 h-7">
-                            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-                        </svg>
+                        <div className="animate-bounce">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="
+                        0 0 20 20" fill="currentColor" className="w-7 h-7 rotate-90 lg:rotate-0 ">
+                                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 <div className="flex flex-col col-span-12 p-6 divide-y lg:col-span-6 lg:p-10 dark:divide-gray-300">
@@ -72,12 +76,13 @@ export default Coll
 function CollectionPiece({ Title, description, time }) {
     return (
         <>
-            <div className="pt-6 pb-4 space-y-2">
+            <div className="pt-6 pb-4 space-y-2 hover:scale-[102%] transition">
                 <span>{time}</span>
                 <h1 className="text-3xl font-bold">{Title}</h1>
                 <p>{description}</p>
                 <a rel="noopener noreferrer" href="#" className="inline-flex items-center py-2 space-x-2 text-sm text-violet-600">
                     <NavLink to={'/coll/'}>Read more</NavLink>
+
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                         <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
                     </svg>

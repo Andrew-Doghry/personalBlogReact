@@ -10,8 +10,8 @@ import { Outlet, useParams } from 'react-router-dom';
 import Coll from './Coll.jsx';
 
 function Collections() {
-  const { collId } = useParams()
 
+  const { collId } = useParams()
   return (
     <>
       {collId ? <Outlet /> :
@@ -51,3 +51,6 @@ function Collections() {
 }
 
 export default Collections;
+
+
+

@@ -66,7 +66,7 @@ export default Stories
 // eslint-disable-next-line react/prop-types
 function Post({ title, description, time, imgSrc }) {
   return (
-    <div className="bg-[#020C12] text-white container rounded-2xl overflow-hidden cursor-pointer sm:border sm:border-white lg:border-none">
+    <div className="bg-[#020C12] text-white container rounded-2xl overflow-hidden cursor-pointer border hover:-translate-y-[10px] transition-[0.3]">
       <div className="container grid grid-cols-12  bg-[#020C12]  ">
         <div className="bg-no-repeat bg-cover bg-gray-300 col-span-full lg:col-span-4 " style={{ backgroundImage: `url(${imgSrc})`, backgroundPosition: "center center", backgroundBlendMode: " multiply", backgroundSize: "cover" }}></div>
         <div className="flex flex-col p-6 col-span-full row-span-full lg:col-span-8 lg:p-10">
