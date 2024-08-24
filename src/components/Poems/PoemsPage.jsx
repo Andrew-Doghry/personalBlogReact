@@ -12,6 +12,21 @@ export default function PoemsPage() {
 	const { scrollYProgress } = useScroll()
 	return (
 		<>
+			<motion.div className="absolute bg-black text-flareOrange    capitalize text-2xl md:text-4xl w-screen h-screen mt-4 flex justify-center items-center font-bold"
+				animate={{
+					y: "-130%"
+				}}
+				transition={{
+					type: 'spring',
+					stiffness: 40,
+					delay: 0.3
+				}}
+
+			>
+				{target.title}
+
+			</motion.div>
+
 			<motion.div className='fixed top-0 right-0 left-0 z-200 origin-left bg-flareOrange h-[5px] w-full' style={{ scaleX: scrollYProgress }}></motion.div>
 			<div className="p-5 mt-10 mx-auto sm:p-10 md:p-16 dark:text-gray-800 container">
 				<div className="flex flex-col max-w-3xl mx-auto overflow-hidden rounded">

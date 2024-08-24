@@ -90,7 +90,8 @@ export default function HeroSection() {
                       key={item.name}
                       to={item.to}
                       className={({ isActive }) => `-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7   ${isActive ? "text-orange-600" : "text-blue-900"}`}
-                    // text-gray-900
+                      // text-gray-900
+                      onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
                     </NavLink>
@@ -100,6 +101,8 @@ export default function HeroSection() {
                   <NavLink
                     to="followme"
                     className={({ isActive }) => `-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7   ${isActive ? "text-orange-600" : "text-blue-900"}`}
+                    onClick={() => setMobileMenuOpen(false)}
+
                   >
                     Follow me
                   </NavLink>
